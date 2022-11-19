@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SC18IS604PWJ
+D Interface - Specialized SPI to I2C-bus interface
+K
+F https://www.mouser.com/datasheet/2/302/SC18IS604-2933176.pdf
+$ENDCMP
+#
+#End Doc Library

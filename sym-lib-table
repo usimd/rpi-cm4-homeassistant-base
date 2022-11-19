@@ -1,0 +1,9 @@
+(sym_lib_table
+  (lib (name "CM4IO")(type "KiCad")(uri "${KIPRJMOD}/lib/CM4IO.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS65283-1RGER")(type "KiCad")(uri "${KIPRJMOD}/lib/TPS65283-1RGER.kicad_sym")(options "")(descr ""))
+  (lib (name "PTPS25750DRJKT")(type "KiCad")(uri "${KIPRJMOD}/lib/PTPS25750DRJKT.kicad_sym")(options "")(descr ""))
+  (lib (name "SC18IS604PWJ")(type "KiCad")(uri "${KIPRJMOD}/lib/SC18IS604PWJ.kicad_sym")(options "")(descr ""))
+  (lib (name "TCN75AVUA")(type "KiCad")(uri "${KIPRJMOD}/lib/TCN75AVUA.kicad_sym")(options "")(descr ""))
+  (lib (name "ARJM11B1-502-AB-EW2")(type "KiCad")(uri "${KIPRJMOD}/lib/ARJM11B1-502-AB-EW2.kicad_sym")(options "")(descr ""))
+  (lib (name "MGM210PB32JIA2")(type "KiCad")(uri "${KIPRJMOD}/lib/MGM210PB32JIA2.kicad_sym")(options "")(descr ""))
+)

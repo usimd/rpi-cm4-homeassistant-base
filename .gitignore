@@ -6,9 +6,11 @@
 *.bak
 *.bck
 *.kicad_pcb-bak
+*.kicad_sch-bak
 *.sch-bak
 *~
 _autosave-*
+\#auto_saved_files\#
 *.tmp
 *-save.pro
 *-save.kicad_pcb
@@ -24,3 +26,8 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+rpi-cm-ssd-backups/
+# Do not upload 3D files (potential licensing issues)
+lib/**/*.[Ss][Tt][Ee][Pp]
+lib/**/*.[Ss][Tt][Pp]

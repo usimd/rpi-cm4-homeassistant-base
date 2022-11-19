@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MGM210PB32JIA2
+D Bluetooth Modules (802.15.1) MGM210P Wireless Gecko Multiprotocol Module, PCB, Secure Vault, +20 dBm, 2.4 GHz, 1 MB Flash, -40 to
+K
+F https://www.silabs.com/documents/public/data-sheets/mgm210p-datasheet.pdf
+$ENDCMP
+#
+#End Doc Library

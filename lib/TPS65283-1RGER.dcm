@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS65283-1RGER
+D 4.5 V to 18 V Input Voltage, 3.5A/2.5A, Synchronous Dual Buck Converter w/ Power Distribution Switch
+K
+F http://www.ti.com/lit/gpn/tps65283-1
+$ENDCMP
+#
+#End Doc Library

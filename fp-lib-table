@@ -1,0 +1,12 @@
+(fp_lib_table
+  (lib (name "CM4IO")(type "KiCad")(uri "${KIPRJMOD}/lib/CM4IO.pretty")(options "")(descr ""))
+  (lib (name "WSK1216")(type "KiCad")(uri "${KIPRJMOD}/lib/WSK1216.pretty")(options "")(descr ""))
+  (lib (name "TPS25750")(type "KiCad")(uri "${KIPRJMOD}/lib/TPS25750.pretty")(options "")(descr ""))
+  (lib (name "TPS65283")(type "KiCad")(uri "${KIPRJMOD}/lib/TPS65283.pretty")(options "")(descr ""))
+  (lib (name "SC18IS604")(type "KiCad")(uri "${KIPRJMOD}/lib/SC18IS604.pretty")(options "")(descr ""))
+  (lib (name "TCN75A")(type "KiCad")(uri "${KIPRJMOD}/lib/TCN75A.pretty")(options "")(descr ""))
+  (lib (name "SM3ZS067U310")(type "KiCad")(uri "${KIPRJMOD}/lib/SM3ZS067U310.pretty")(options "")(descr ""))
+  (lib (name "ARJM11B1-502-AB-EW2")(type "KiCad")(uri "${KIPRJMOD}/lib/ARJM11B1-502-AB-EW2.pretty")(options "")(descr ""))
+  (lib (name "A-4JA")(type "KiCad")(uri "${KIPRJMOD}/lib/A-4JA.pretty")(options "")(descr ""))
+  (lib (name "MGM210PB32JIA2")(type "KiCad")(uri "${KIPRJMOD}/lib/MGM210PB32JIA2.pretty")(options "")(descr ""))
+)
