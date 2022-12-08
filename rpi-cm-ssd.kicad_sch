@@ -1146,23 +1146,23 @@
     (path "/fabb2dd3-d7af-4f82-a839-e30123e0a7f6/81289468-6f40-4ab7-ae59-3c16a83862ba"
       (reference "TP6") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
     )
-    (path "/83b039bf-d58d-4d6c-91b1-411c751c0a4c/662fc4bd-8dc3-41a0-af6c-9134108ddf21"
-      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
-    )
     (path "/83b039bf-d58d-4d6c-91b1-411c751c0a4c/6bbda015-9971-4a65-ad6e-7ca9eb51ffc6"
-      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
-    )
-    (path "/83b039bf-d58d-4d6c-91b1-411c751c0a4c/7b448c58-6002-4704-9a54-37614904d708"
-      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
-    )
-    (path "/83b039bf-d58d-4d6c-91b1-411c751c0a4c/ac0c7f4e-3acc-41d9-96e9-509afa4dc0fe"
-      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
+      (reference "TP7") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
     )
     (path "/83b039bf-d58d-4d6c-91b1-411c751c0a4c/b65951aa-6be9-42c9-ad80-6111d1eb718d"
-      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
+      (reference "TP8") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
+    )
+    (path "/83b039bf-d58d-4d6c-91b1-411c751c0a4c/ac0c7f4e-3acc-41d9-96e9-509afa4dc0fe"
+      (reference "TP9") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
+    )
+    (path "/83b039bf-d58d-4d6c-91b1-411c751c0a4c/662fc4bd-8dc3-41a0-af6c-9134108ddf21"
+      (reference "TP10") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
     )
     (path "/83b039bf-d58d-4d6c-91b1-411c751c0a4c/e2df2344-a625-48fa-9d8b-a7ce6faabfbf"
-      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
+      (reference "TP11") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
+    )
+    (path "/83b039bf-d58d-4d6c-91b1-411c751c0a4c/7b448c58-6002-4704-9a54-37614904d708"
+      (reference "TP12") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
     )
     (path "/fabb2dd3-d7af-4f82-a839-e30123e0a7f6/3d227489-5060-4549-982b-3b250994af85"
       (reference "U1") (unit 1) (value "TVS2200DRV") (footprint "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm")
