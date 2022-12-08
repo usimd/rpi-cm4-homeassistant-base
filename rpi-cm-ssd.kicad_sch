@@ -828,6 +828,9 @@
     (path "/fabb2dd3-d7af-4f82-a839-e30123e0a7f6/a9f3ea55-e1b7-424c-8ace-67d74d44b7ca"
       (reference "#PWR0183") (unit 1) (value "VCC") (footprint "")
     )
+    (path "/fabb2dd3-d7af-4f82-a839-e30123e0a7f6/cdd9f5e4-ec06-4ce6-a155-4120e184e5a6"
+      (reference "#PWR0184") (unit 1) (value "GND") (footprint "")
+    )
     (path "/1676d548-828c-482e-aa18-249053c7cd27/1113d680-dadc-4b74-acc5-69b1738ad134"
       (reference "AE1") (unit 1) (value "A-4JA") (footprint "A-4JA:A-4JA")
     )
@@ -1143,6 +1146,24 @@
     (path "/fabb2dd3-d7af-4f82-a839-e30123e0a7f6/81289468-6f40-4ab7-ae59-3c16a83862ba"
       (reference "TP6") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
     )
+    (path "/83b039bf-d58d-4d6c-91b1-411c751c0a4c/662fc4bd-8dc3-41a0-af6c-9134108ddf21"
+      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
+    )
+    (path "/83b039bf-d58d-4d6c-91b1-411c751c0a4c/6bbda015-9971-4a65-ad6e-7ca9eb51ffc6"
+      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
+    )
+    (path "/83b039bf-d58d-4d6c-91b1-411c751c0a4c/7b448c58-6002-4704-9a54-37614904d708"
+      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
+    )
+    (path "/83b039bf-d58d-4d6c-91b1-411c751c0a4c/ac0c7f4e-3acc-41d9-96e9-509afa4dc0fe"
+      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
+    )
+    (path "/83b039bf-d58d-4d6c-91b1-411c751c0a4c/b65951aa-6be9-42c9-ad80-6111d1eb718d"
+      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
+    )
+    (path "/83b039bf-d58d-4d6c-91b1-411c751c0a4c/e2df2344-a625-48fa-9d8b-a7ce6faabfbf"
+      (reference "TP?") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
+    )
     (path "/fabb2dd3-d7af-4f82-a839-e30123e0a7f6/3d227489-5060-4549-982b-3b250994af85"
       (reference "U1") (unit 1) (value "TVS2200DRV") (footprint "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm")
     )
@@ -1162,7 +1183,7 @@
       (reference "U6") (unit 1) (value "TPS25750DRJKT") (footprint "TPS25750:PTPS25750DRJKT")
     )
     (path "/fabb2dd3-d7af-4f82-a839-e30123e0a7f6/f04f3a4c-406e-43ea-9c68-8275000c6bde"
-      (reference "U7") (unit 1) (value "PAC1951-1") (footprint "Package_DFN_QFN:UQFN-16-1EP_4x4mm_P0.65mm_EP2.7x2.7mm")
+      (reference "U7") (unit 1) (value "PAC1951-1") (footprint "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm_ThermalVias")
     )
     (path "/8bad5741-37db-4b79-b533-af5ffd79bc37/388c1732-349a-4c95-bb1d-3b4e9f61d781"
       (reference "U8") (unit 1) (value "USB2512") (footprint "Package_DFN_QFN:QFN-36-1EP_6x6mm_P0.5mm_EP3.7x3.7mm")

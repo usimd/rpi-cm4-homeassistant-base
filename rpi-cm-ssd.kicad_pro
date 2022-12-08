@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.3048,
-          "height": 0.599999,
-          "width": 0.599999
+          "drill": 0.95,
+          "height": 0.65,
+          "width": 0.95
         },
         "silk_line_width": 0.09999999999999999,
         "silk_text_italic": false,
@@ -769,8 +769,6 @@
           "unconnected-(U6-Pad10)",
           "unconnected-(U6-Pad13)",
           "unconnected-(U6-Pad19)",
-          "unconnected-(U6-Pad34)",
-          "unconnected-(U6-Pad35)",
           "unconnected-(U6-Pad36)",
           "unconnected-(U6-Pad37)",
           "unconnected-(U6-Pad5)",
