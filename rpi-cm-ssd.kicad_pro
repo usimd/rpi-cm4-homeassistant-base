@@ -1,5 +1,6 @@
 {
   "board": {
+    "3dviewports": [],
     "design_settings": {
       "defaults": {
         "board_outline_line_width": 0.09999999999999999,
@@ -117,8 +118,6 @@
         "clearance|58000000|66775000|1a0d6a53-929b-4c64-9938-6679388e59d1|829c073d-d947-4ba0-8c76-7bed2c4d7c09",
         "clearance|58400000|67545000|805ad18f-03d9-49e4-9546-25a627670dd7|9c0a6d36-b675-40e8-842f-66cb37224cfa",
         "clearance|58550000|66775000|51b708b1-176a-424f-821f-665261f460a4|1a0d6a53-929b-4c64-9938-6679388e59d1",
-        "clearance|58850000|45922133|7d3100ac-0a44-4913-bca0-3f5c8adf8d0b|5e147ebc-4328-49a1-b054-0b07ceac5129",
-        "clearance|58850000|45922133|7d3100ac-0a44-4913-bca0-3f5c8adf8d0b|a0f218cc-102c-41da-9194-47ec4759ddc8",
         "clearance|65550000|60800000|02ef05e9-b67b-48a3-80ff-6795b0bb8d09|abc75b5c-a2b7-415d-b90f-9b6e0d32f0b3",
         "clearance|65550000|60800000|29207fa9-9842-475d-9bc3-a3f2bbc5b87f|abc75b5c-a2b7-415d-b90f-9b6e0d32f0b3",
         "clearance|65550000|60800000|3fb1a160-b9dd-4ede-a403-bdc12b253623|abc75b5c-a2b7-415d-b90f-9b6e0d32f0b3",
@@ -200,20 +199,26 @@
       "rule_severities": {
         "annular_width": "error",
         "clearance": "error",
+        "connection_width": "warning",
         "copper_edge_clearance": "error",
+        "copper_sliver": "warning",
         "courtyards_overlap": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
+        "footprint": "error",
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "invalid_outline": "error",
+        "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
+        "lib_footprint_issues": "warning",
+        "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "missing_courtyard": "ignore",
@@ -223,9 +228,14 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
+        "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
+        "solder_mask_bridge": "error",
+        "starved_thermal": "error",
+        "text_height": "warning",
+        "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",
@@ -234,7 +244,6 @@
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
-        "zone_has_empty_net": "error",
         "zones_intersect": "error"
       },
       "rules": {
@@ -242,20 +251,65 @@
         "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.0,
+        "min_connection": 0.0,
         "min_copper_edge_clearance": 0.01,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
+        "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
+        "min_text_height": 0.7999999999999999,
+        "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.19999999999999998,
         "min_track_width": 0.125,
         "min_via_annular_width": 0.049999999999999996,
         "min_via_diameter": 0.6,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
+        "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
+      "teardrop_options": [
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 5,
+          "td_on_pad_in_zone": false,
+          "td_onpadsmd": true,
+          "td_onroundshapesonly": false,
+          "td_ontrackend": false,
+          "td_onviapad": true
+        }
+      ],
+      "teardrop_parameters": [
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_round_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_rect_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_track_end",
+          "td_width_to_size_filter_ratio": 0.9
+        }
+      ],
       "track_widths": [
         0.0,
         0.125,
@@ -282,7 +336,8 @@
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
-    "layer_presets": []
+    "layer_presets": [],
+    "viewports": []
   },
   "boards": [],
   "cvpcb": {
@@ -466,18 +521,23 @@
     "rule_severities": {
       "bus_definition_conflict": "error",
       "bus_entry_needed": "error",
-      "bus_label_syntax": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
+      "conflicting_netclasses": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
+      "endpoint_off_grid": "warning",
       "extra_units": "error",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
       "lib_symbol_issues": "warning",
+      "missing_bidi_pin": "warning",
+      "missing_input_pin": "warning",
+      "missing_power_pin": "error",
+      "missing_unit": "warning",
       "multiple_net_names": "warning",
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
@@ -487,6 +547,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
+      "simulation_model_issue": "ignore",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -504,7 +565,7 @@
   "net_settings": {
     "classes": [
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.125,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -518,10 +579,10 @@
         "track_width": 0.25,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.25,
         "diff_pair_gap": 0.18,
         "diff_pair_via_gap": 0.25,
@@ -530,25 +591,15 @@
         "microvia_diameter": 0.8,
         "microvia_drill": 0.4,
         "name": "100Ohm DP",
-        "nets": [
-          "/CM4 GPIO/TRD0_N",
-          "/CM4 GPIO/TRD0_P",
-          "/CM4 GPIO/TRD1_N",
-          "/CM4 GPIO/TRD1_P",
-          "/CM4 GPIO/TRD2_N",
-          "/CM4 GPIO/TRD2_P",
-          "/CM4 GPIO/TRD3_N",
-          "/CM4 GPIO/TRD3_P"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "via_diameter": 0.6,
         "via_drill": 0.2,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.25,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -557,20 +608,15 @@
         "microvia_diameter": 0.8,
         "microvia_drill": 0.4,
         "name": "50Ohm SE",
-        "nets": [
-          "/Power/CC1",
-          "/Power/CC2",
-          "Net-(AE1-Pad1)"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.245,
         "via_diameter": 0.6,
         "via_drill": 0.2,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.25,
         "diff_pair_gap": 0.165,
         "diff_pair_via_gap": 0.25,
@@ -579,29 +625,15 @@
         "microvia_diameter": 0.8,
         "microvia_drill": 0.4,
         "name": "90Ohm DP",
-        "nets": [
-          "/CM4 Highspeed/PCIE_CLK_N",
-          "/CM4 Highspeed/PCIE_CLK_P",
-          "/CM4 Highspeed/PCIE_RX_N",
-          "/CM4 Highspeed/PCIE_RX_P",
-          "/CM4 Highspeed/PCIE_TX_N",
-          "/CM4 Highspeed/PCIE_TX_P",
-          "/CM4 Highspeed/USB2_N",
-          "/CM4 Highspeed/USB2_P",
-          "/USB/HD1_N",
-          "/USB/HD1_P",
-          "/USB/HD2_N",
-          "/USB/HD2_P"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "via_diameter": 0.6,
         "via_drill": 0.2,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.125,
         "diff_pair_gap": 0.125,
         "diff_pair_via_gap": 0.25,
@@ -610,192 +642,801 @@
         "microvia_diameter": 0.6,
         "microvia_drill": 0.2,
         "name": "Min",
-        "nets": [
-          "/CM4 GPIO/SPI0_MISO",
-          "/CM4 GPIO/SPI0_MOSI",
-          "/CM4 GPIO/SPI0_SCLK",
-          "GND",
-          "unconnected-(J1-PadA10)",
-          "unconnected-(J1-PadA11)",
-          "unconnected-(J1-PadA2)",
-          "unconnected-(J1-PadA3)",
-          "unconnected-(J1-PadA8)",
-          "unconnected-(J1-PadB10)",
-          "unconnected-(J1-PadB11)",
-          "unconnected-(J1-PadB2)",
-          "unconnected-(J1-PadB3)",
-          "unconnected-(J1-PadB8)",
-          "unconnected-(J2-Pad10)",
-          "unconnected-(J2-Pad11)",
-          "unconnected-(J2-Pad13)",
-          "unconnected-(J2-Pad17)",
-          "unconnected-(J2-Pad19)",
-          "unconnected-(J2-Pad20)",
-          "unconnected-(J2-Pad22)",
-          "unconnected-(J2-Pad23)",
-          "unconnected-(J2-Pad24)",
-          "unconnected-(J2-Pad25)",
-          "unconnected-(J2-Pad26)",
-          "unconnected-(J2-Pad28)",
-          "unconnected-(J2-Pad29)",
-          "unconnected-(J2-Pad30)",
-          "unconnected-(J2-Pad31)",
-          "unconnected-(J2-Pad32)",
-          "unconnected-(J2-Pad34)",
-          "unconnected-(J2-Pad35)",
-          "unconnected-(J2-Pad36)",
-          "unconnected-(J2-Pad37)",
-          "unconnected-(J2-Pad38)",
-          "unconnected-(J2-Pad40)",
-          "unconnected-(J2-Pad42)",
-          "unconnected-(J2-Pad44)",
-          "unconnected-(J2-Pad46)",
-          "unconnected-(J2-Pad48)",
-          "unconnected-(J2-Pad5)",
-          "unconnected-(J2-Pad54)",
-          "unconnected-(J2-Pad56)",
-          "unconnected-(J2-Pad58)",
-          "unconnected-(J2-Pad6)",
-          "unconnected-(J2-Pad67)",
-          "unconnected-(J2-Pad68)",
-          "unconnected-(J2-Pad69)",
-          "unconnected-(J2-Pad7)",
-          "unconnected-(J2-Pad8)",
-          "unconnected-(Module1-Pad104)",
-          "unconnected-(Module1-Pad106)",
-          "unconnected-(Module1-Pad111)",
-          "unconnected-(Module1-Pad115)",
-          "unconnected-(Module1-Pad117)",
-          "unconnected-(Module1-Pad121)",
-          "unconnected-(Module1-Pad123)",
-          "unconnected-(Module1-Pad127)",
-          "unconnected-(Module1-Pad128)",
-          "unconnected-(Module1-Pad129)",
-          "unconnected-(Module1-Pad130)",
-          "unconnected-(Module1-Pad133)",
-          "unconnected-(Module1-Pad134)",
-          "unconnected-(Module1-Pad135)",
-          "unconnected-(Module1-Pad136)",
-          "unconnected-(Module1-Pad139)",
-          "unconnected-(Module1-Pad140)",
-          "unconnected-(Module1-Pad141)",
-          "unconnected-(Module1-Pad142)",
-          "unconnected-(Module1-Pad143)",
-          "unconnected-(Module1-Pad145)",
-          "unconnected-(Module1-Pad146)",
-          "unconnected-(Module1-Pad147)",
-          "unconnected-(Module1-Pad148)",
-          "unconnected-(Module1-Pad149)",
-          "unconnected-(Module1-Pad151)",
-          "unconnected-(Module1-Pad152)",
-          "unconnected-(Module1-Pad153)",
-          "unconnected-(Module1-Pad154)",
-          "unconnected-(Module1-Pad157)",
-          "unconnected-(Module1-Pad158)",
-          "unconnected-(Module1-Pad159)",
-          "unconnected-(Module1-Pad16)",
-          "unconnected-(Module1-Pad160)",
-          "unconnected-(Module1-Pad163)",
-          "unconnected-(Module1-Pad164)",
-          "unconnected-(Module1-Pad165)",
-          "unconnected-(Module1-Pad166)",
-          "unconnected-(Module1-Pad169)",
-          "unconnected-(Module1-Pad170)",
-          "unconnected-(Module1-Pad171)",
-          "unconnected-(Module1-Pad172)",
-          "unconnected-(Module1-Pad175)",
-          "unconnected-(Module1-Pad176)",
-          "unconnected-(Module1-Pad177)",
-          "unconnected-(Module1-Pad178)",
-          "unconnected-(Module1-Pad18)",
-          "unconnected-(Module1-Pad181)",
-          "unconnected-(Module1-Pad182)",
-          "unconnected-(Module1-Pad183)",
-          "unconnected-(Module1-Pad184)",
-          "unconnected-(Module1-Pad187)",
-          "unconnected-(Module1-Pad188)",
-          "unconnected-(Module1-Pad189)",
-          "unconnected-(Module1-Pad19)",
-          "unconnected-(Module1-Pad190)",
-          "unconnected-(Module1-Pad193)",
-          "unconnected-(Module1-Pad194)",
-          "unconnected-(Module1-Pad195)",
-          "unconnected-(Module1-Pad196)",
-          "unconnected-(Module1-Pad199)",
-          "unconnected-(Module1-Pad20)",
-          "unconnected-(Module1-Pad200)",
-          "unconnected-(Module1-Pad24)",
-          "unconnected-(Module1-Pad25)",
-          "unconnected-(Module1-Pad26)",
-          "unconnected-(Module1-Pad27)",
-          "unconnected-(Module1-Pad28)",
-          "unconnected-(Module1-Pad31)",
-          "unconnected-(Module1-Pad35)",
-          "unconnected-(Module1-Pad36)",
-          "unconnected-(Module1-Pad41)",
-          "unconnected-(Module1-Pad45)",
-          "unconnected-(Module1-Pad46)",
-          "unconnected-(Module1-Pad47)",
-          "unconnected-(Module1-Pad48)",
-          "unconnected-(Module1-Pad49)",
-          "unconnected-(Module1-Pad56)",
-          "unconnected-(Module1-Pad57)",
-          "unconnected-(Module1-Pad58)",
-          "unconnected-(Module1-Pad61)",
-          "unconnected-(Module1-Pad62)",
-          "unconnected-(Module1-Pad63)",
-          "unconnected-(Module1-Pad64)",
-          "unconnected-(Module1-Pad67)",
-          "unconnected-(Module1-Pad68)",
-          "unconnected-(Module1-Pad69)",
-          "unconnected-(Module1-Pad70)",
-          "unconnected-(Module1-Pad72)",
-          "unconnected-(Module1-Pad73)",
-          "unconnected-(Module1-Pad75)",
-          "unconnected-(Module1-Pad76)",
-          "unconnected-(Module1-Pad78)",
-          "unconnected-(Module1-Pad80)",
-          "unconnected-(Module1-Pad88)",
-          "unconnected-(Module1-Pad89)",
-          "unconnected-(Module1-Pad90)",
-          "unconnected-(Module1-Pad91)",
-          "unconnected-(Module1-Pad92)",
-          "unconnected-(Module1-Pad94)",
-          "unconnected-(Module1-Pad96)",
-          "unconnected-(Module1-Pad97)",
-          "unconnected-(Module1-Pad99)",
-          "unconnected-(U11-Pad3)",
-          "unconnected-(U12-Pad3)",
-          "unconnected-(U6-Pad10)",
-          "unconnected-(U6-Pad13)",
-          "unconnected-(U6-Pad19)",
-          "unconnected-(U6-Pad36)",
-          "unconnected-(U6-Pad37)",
-          "unconnected-(U6-Pad5)",
-          "unconnected-(U6-Pad6)",
-          "unconnected-(U6-Pad7)",
-          "unconnected-(U7-Pad15)",
-          "unconnected-(U8-Pad11)",
-          "unconnected-(U8-Pad6)",
-          "unconnected-(U8-Pad9)",
-          "unconnected-(U9-Pad16)",
-          "unconnected-(U9-Pad5)",
-          "unconnected-(U9-Pad6)",
-          "unconnected-(U9-Pad7)",
-          "unconnected-(U9-Pad9)"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.125,
         "via_diameter": 0.6,
         "via_drill": 0.2,
-        "wire_width": 6.0
+        "wire_width": 6
       }
     ],
     "meta": {
-      "version": 2
+      "version": 3
     },
-    "net_colors": null
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": [
+      {
+        "netclass": "100Ohm DP",
+        "pattern": "/CM4 GPIO/TRD0_N"
+      },
+      {
+        "netclass": "100Ohm DP",
+        "pattern": "/CM4 GPIO/TRD0_P"
+      },
+      {
+        "netclass": "100Ohm DP",
+        "pattern": "/CM4 GPIO/TRD1_N"
+      },
+      {
+        "netclass": "100Ohm DP",
+        "pattern": "/CM4 GPIO/TRD1_P"
+      },
+      {
+        "netclass": "100Ohm DP",
+        "pattern": "/CM4 GPIO/TRD2_N"
+      },
+      {
+        "netclass": "100Ohm DP",
+        "pattern": "/CM4 GPIO/TRD2_P"
+      },
+      {
+        "netclass": "100Ohm DP",
+        "pattern": "/CM4 GPIO/TRD3_N"
+      },
+      {
+        "netclass": "100Ohm DP",
+        "pattern": "/CM4 GPIO/TRD3_P"
+      },
+      {
+        "netclass": "50Ohm SE",
+        "pattern": "/Power/CC1"
+      },
+      {
+        "netclass": "50Ohm SE",
+        "pattern": "/Power/CC2"
+      },
+      {
+        "netclass": "50Ohm SE",
+        "pattern": "Net-(AE1-Pad1)"
+      },
+      {
+        "netclass": "90Ohm DP",
+        "pattern": "/CM4 Highspeed/PCIE_CLK_N"
+      },
+      {
+        "netclass": "90Ohm DP",
+        "pattern": "/CM4 Highspeed/PCIE_CLK_P"
+      },
+      {
+        "netclass": "90Ohm DP",
+        "pattern": "/CM4 Highspeed/PCIE_RX_N"
+      },
+      {
+        "netclass": "90Ohm DP",
+        "pattern": "/CM4 Highspeed/PCIE_RX_P"
+      },
+      {
+        "netclass": "90Ohm DP",
+        "pattern": "/CM4 Highspeed/PCIE_TX_N"
+      },
+      {
+        "netclass": "90Ohm DP",
+        "pattern": "/CM4 Highspeed/PCIE_TX_P"
+      },
+      {
+        "netclass": "90Ohm DP",
+        "pattern": "/CM4 Highspeed/USB2_N"
+      },
+      {
+        "netclass": "90Ohm DP",
+        "pattern": "/CM4 Highspeed/USB2_P"
+      },
+      {
+        "netclass": "90Ohm DP",
+        "pattern": "/USB/HD1_N"
+      },
+      {
+        "netclass": "90Ohm DP",
+        "pattern": "/USB/HD1_P"
+      },
+      {
+        "netclass": "90Ohm DP",
+        "pattern": "/USB/HD2_N"
+      },
+      {
+        "netclass": "90Ohm DP",
+        "pattern": "/USB/HD2_P"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "/CM4 GPIO/SPI0_MISO"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "/CM4 GPIO/SPI0_MOSI"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "/CM4 GPIO/SPI0_SCLK"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J1-PadA10)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J1-PadA11)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J1-PadA2)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J1-PadA3)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J1-PadA8)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J1-PadB10)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J1-PadB11)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J1-PadB2)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J1-PadB3)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J1-PadB8)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad10)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad11)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad13)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad17)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad19)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad20)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad22)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad23)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad24)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad25)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad26)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad28)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad29)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad30)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad31)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad32)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad34)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad35)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad36)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad37)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad38)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad40)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad42)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad44)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad46)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad48)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad5)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad54)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad56)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad58)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad6)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad67)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad68)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad69)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad7)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(J2-Pad8)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad104)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad106)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad111)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad115)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad117)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad121)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad123)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad127)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad128)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad129)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad130)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad133)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad134)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad135)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad136)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad139)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad140)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad141)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad142)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad143)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad145)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad146)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad147)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad148)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad149)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad151)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad152)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad153)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad154)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad157)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad158)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad159)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad16)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad160)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad163)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad164)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad165)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad166)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad169)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad170)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad171)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad172)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad175)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad176)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad177)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad178)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad18)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad181)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad182)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad183)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad184)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad187)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad188)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad189)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad19)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad190)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad193)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad194)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad195)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad196)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad199)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad20)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad200)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad24)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad25)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad26)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad27)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad28)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad31)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad35)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad36)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad41)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad45)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad46)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad47)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad48)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad49)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad56)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad57)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad58)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad61)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad62)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad63)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad64)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad67)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad68)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad69)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad70)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad72)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad73)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad75)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad76)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad78)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad80)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad88)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad89)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad90)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad91)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad92)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad94)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad96)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad97)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(Module1-Pad99)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U11-Pad3)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U12-Pad3)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U6-Pad10)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U6-Pad13)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U6-Pad19)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U6-Pad36)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U6-Pad37)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U6-Pad5)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U6-Pad6)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U6-Pad7)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U7-Pad15)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U8-Pad11)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U8-Pad6)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U8-Pad9)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U9-Pad16)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U9-Pad5)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U9-Pad6)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U9-Pad7)"
+      },
+      {
+        "netclass": "Min",
+        "pattern": "unconnected-(U9-Pad9)"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -811,6 +1452,8 @@
   "schematic": {
     "annotate_start_num": 0,
     "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
@@ -842,7 +1485,11 @@
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_adjust_passive_values": false,
+    "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
