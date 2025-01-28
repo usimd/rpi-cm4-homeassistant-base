@@ -1,653 +1,1549 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid d596c5fc-bc79-4446-9328-b82e41a34e97)
-
-  (paper "A4")
-
-  (lib_symbols
-    (symbol "Mechanical:Fiducial" (in_bom yes) (on_board yes)
-      (property "Reference" "FID" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Fiducial" (at 0 3.175 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "fiducial marker" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Fiducial Marker" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Fiducial*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Fiducial_0_1"
-        (circle (center 0 0) (radius 1.27)
-          (stroke (width 0.508) (type default))
-          (fill (type background))
-        )
-      )
-    )
-    (symbol "Mechanical:MountingHole" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "H" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "MountingHole" (at 0 3.175 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "mounting hole" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Mounting Hole without connection" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "MountingHole*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MountingHole_0_1"
-        (circle (center 0 0) (radius 1.27)
-          (stroke (width 1.27) (type default))
-          (fill (type none))
-        )
-      )
-    )
-  )
-
-  (junction (at 100.33 100.33) (diameter 0) (color 0 0 0 0)
-    (uuid 8bd0e8eb-6a0c-4c03-9728-4c79bf5d064c)
-  )
-  (junction (at 107.95 100.33) (diameter 0) (color 0 0 0 0)
-    (uuid d5af273a-c904-4557-95c0-ff7635cb173c)
-  )
-
-  (wire (pts (xy 167.64 52.07) (xy 180.34 52.07))
-    (stroke (width 0) (type default))
-    (uuid 07823780-c6b9-4208-bea9-eff1955bc239)
-  )
-  (wire (pts (xy 232.41 62.23) (xy 236.22 62.23))
-    (stroke (width 0) (type default))
-    (uuid 0cc0247d-e6f0-4006-aeff-6e9f316c499d)
-  )
-  (wire (pts (xy 170.18 90.17) (xy 107.95 90.17))
-    (stroke (width 0) (type default))
-    (uuid 0f176648-a5d9-4c72-ac72-93d9978d2fe0)
-  )
-  (wire (pts (xy 95.25 30.48) (xy 95.25 39.37))
-    (stroke (width 0) (type default))
-    (uuid 0fba6999-3b42-44e6-a31e-0bd37237a051)
-  )
-  (wire (pts (xy 90.17 128.27) (xy 110.49 128.27))
-    (stroke (width 0) (type default))
-    (uuid 15df0cd5-2fc4-49f6-b2a9-2f1627ae144d)
-  )
-  (wire (pts (xy 236.22 107.95) (xy 229.87 107.95))
-    (stroke (width 0) (type default))
-    (uuid 302db910-3144-46ce-8d1c-a5ae32a6ec05)
-  )
-  (wire (pts (xy 107.95 90.17) (xy 107.95 100.33))
-    (stroke (width 0) (type default))
-    (uuid 38a63adc-261b-4b74-89fd-3771116d4c52)
-  )
-  (wire (pts (xy 170.18 49.53) (xy 170.18 30.48))
-    (stroke (width 0) (type default))
-    (uuid 398a1357-549c-4ebf-acee-59344873bc47)
-  )
-  (wire (pts (xy 238.76 110.49) (xy 229.87 110.49))
-    (stroke (width 0) (type default))
-    (uuid 489a9210-ff2c-4422-8775-abe93b23c157)
-  )
-  (wire (pts (xy 232.41 59.69) (xy 238.76 59.69))
-    (stroke (width 0) (type default))
-    (uuid 4b22656e-2e67-4788-b27c-1fdb3fe08591)
-  )
-  (wire (pts (xy 100.33 100.33) (xy 107.95 100.33))
-    (stroke (width 0) (type default))
-    (uuid 4b5e5f7a-233b-4cc6-949b-8fc60625471e)
-  )
-  (wire (pts (xy 170.18 100.33) (xy 170.18 90.17))
-    (stroke (width 0) (type default))
-    (uuid 508fed7f-319e-4af6-beae-7426e9d8d5a0)
-  )
-  (wire (pts (xy 238.76 59.69) (xy 238.76 110.49))
-    (stroke (width 0) (type default))
-    (uuid 5a0aa7c0-15a2-49fe-b705-c3d4378d5d64)
-  )
-  (wire (pts (xy 180.34 49.53) (xy 170.18 49.53))
-    (stroke (width 0) (type default))
-    (uuid 5f21cb56-72ec-48f9-b838-dc8c566a53b9)
-  )
-  (wire (pts (xy 90.17 101.6) (xy 100.33 101.6))
-    (stroke (width 0) (type default))
-    (uuid 614d939b-df00-4e9c-a983-8f5df74cdc9d)
-  )
-  (wire (pts (xy 170.18 30.48) (xy 95.25 30.48))
-    (stroke (width 0) (type default))
-    (uuid 67a18111-2008-4171-8683-7624e1547b2b)
-  )
-  (wire (pts (xy 88.9 50.8) (xy 100.33 50.8))
-    (stroke (width 0) (type default))
-    (uuid 68d5da2d-a327-4e60-907a-ce8a15a0077f)
-  )
-  (wire (pts (xy 180.34 100.33) (xy 170.18 100.33))
-    (stroke (width 0) (type default))
-    (uuid 73ace5bc-d23e-4a48-93b9-a42dcb01c765)
-  )
-  (wire (pts (xy 90.17 120.65) (xy 110.49 120.65))
-    (stroke (width 0) (type default))
-    (uuid 74760991-0fa5-4b59-8ac8-814e79e2bf0c)
-  )
-  (wire (pts (xy 90.17 123.19) (xy 110.49 123.19))
-    (stroke (width 0) (type default))
-    (uuid 7894ab91-b194-4ed6-9066-cf197564561e)
-  )
-  (wire (pts (xy 156.21 106.68) (xy 180.34 106.68))
-    (stroke (width 0) (type default))
-    (uuid 93587666-ab01-432a-98a0-dc605922300d)
-  )
-  (wire (pts (xy 107.95 100.33) (xy 110.49 100.33))
-    (stroke (width 0) (type default))
-    (uuid 9e3f92b2-471f-4d0c-a9cd-125dd1689b74)
-  )
-  (wire (pts (xy 97.79 41.91) (xy 97.79 33.02))
-    (stroke (width 0) (type default))
-    (uuid a175a99d-a8d5-4a06-b964-063d14a8dc38)
-  )
-  (wire (pts (xy 100.33 50.8) (xy 100.33 100.33))
-    (stroke (width 0) (type default))
-    (uuid a7fb9c04-bb87-4a4b-8801-ecfa943ff9dd)
-  )
-  (wire (pts (xy 236.22 62.23) (xy 236.22 107.95))
-    (stroke (width 0) (type default))
-    (uuid ae547cdd-6c80-4f25-be0a-668799cf119d)
-  )
-  (wire (pts (xy 100.33 101.6) (xy 100.33 100.33))
-    (stroke (width 0) (type default))
-    (uuid c11290da-abf8-4d66-a646-517a431b1395)
-  )
-  (wire (pts (xy 156.21 114.3) (xy 180.34 114.3))
-    (stroke (width 0) (type default))
-    (uuid c7110025-ba2c-458b-828e-4dd798bcbb7b)
-  )
-  (wire (pts (xy 88.9 48.26) (xy 111.76 48.26))
-    (stroke (width 0) (type default))
-    (uuid c90bd46b-0759-449f-87eb-21fe2ba84889)
-  )
-  (wire (pts (xy 156.21 109.22) (xy 180.34 109.22))
-    (stroke (width 0) (type default))
-    (uuid ca8f6640-106e-43ac-9085-a023807ab230)
-  )
-  (wire (pts (xy 90.17 125.73) (xy 110.49 125.73))
-    (stroke (width 0) (type default))
-    (uuid cb81b5dc-2bbb-42c3-9db1-40e1fd085f90)
-  )
-  (wire (pts (xy 97.79 33.02) (xy 167.64 33.02))
-    (stroke (width 0) (type default))
-    (uuid cd13340f-767b-4090-9207-2487469cb8fc)
-  )
-  (wire (pts (xy 95.25 39.37) (xy 88.9 39.37))
-    (stroke (width 0) (type default))
-    (uuid ed92422f-0326-44bf-8c83-47be7c9ea657)
-  )
-  (wire (pts (xy 156.21 111.76) (xy 180.34 111.76))
-    (stroke (width 0) (type default))
-    (uuid faa5304d-bba5-4ecb-afac-e01f2d319952)
-  )
-  (wire (pts (xy 167.64 33.02) (xy 167.64 52.07))
-    (stroke (width 0) (type default))
-    (uuid fd94d511-7564-49ef-ba96-a13710c83465)
-  )
-  (wire (pts (xy 88.9 41.91) (xy 97.79 41.91))
-    (stroke (width 0) (type default))
-    (uuid fec627a0-3fc5-4405-8080-5cd1873a046f)
-  )
-  (wire (pts (xy 88.9 45.72) (xy 111.76 45.72))
-    (stroke (width 0) (type default))
-    (uuid ff9a3fda-2787-4b86-9cd5-f1fd89f8667b)
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 252.73 154.94 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 01e18bfa-8ad5-488d-8bc5-09ca0810682c)
-    (property "Reference" "H4" (at 255.27 153.6699 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 255.27 156.2099 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5" (at 252.73 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 252.73 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MPN" "KFS2-M2.5" (at 252.73 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "rpi-cm-ssd"
-        (path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
-          (reference "H4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:Fiducial") (at 252.73 129.54 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 5739c92b-f6da-4d69-bc24-86fa6b8fdaa6)
-    (property "Reference" "FID1" (at 255.27 128.2699 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Fiducial" (at 255.27 130.8099 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1mm" (at 252.73 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 252.73 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "rpi-cm-ssd"
-        (path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
-          (reference "FID1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:Fiducial") (at 252.73 139.7 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 5ba35d4d-942f-4540-98f8-9ba086a30452)
-    (property "Reference" "FID3" (at 255.27 138.4299 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "Fiducial" (at 255.27 140.9699 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1mm" (at 252.73 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 252.73 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "rpi-cm-ssd"
-        (path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
-          (reference "FID3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 208.28 154.94 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6f4aa210-44df-4ce4-91ad-b73367dd7bc7)
-    (property "Reference" "H2" (at 210.82 153.6699 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 210.82 156.2099 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5" (at 208.28 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 208.28 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MPN" "KFS2-M2.5" (at 208.28 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "rpi-cm-ssd"
-        (path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
-          (reference "H2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 186.69 154.94 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b188010d-2da5-4b05-a3d7-61b5d03e3458)
-    (property "Reference" "H1" (at 189.23 153.6699 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 189.23 156.2099 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5" (at 186.69 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 186.69 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MPN" "KFS2-M2.5" (at 186.69 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "rpi-cm-ssd"
-        (path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
-          (reference "H1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 231.14 154.94 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid e1ab0652-57dd-4a51-81da-3176886a468a)
-    (property "Reference" "H3" (at 233.68 153.6699 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 233.68 156.2099 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5" (at 231.14 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 231.14 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MPN" "KFS2-M2.5" (at 231.14 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "rpi-cm-ssd"
-        (path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
-          (reference "H3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:Fiducial") (at 252.73 134.62 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid fa883ca3-a0d4-4fc4-8504-a0ab572eaa57)
-    (property "Reference" "FID2" (at 255.27 133.3499 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Fiducial" (at 255.27 135.8899 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1mm" (at 252.73 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 252.73 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "rpi-cm-ssd"
-        (path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
-          (reference "FID2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet (at 45.72 99.06) (size 44.45 38.1) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 1676d548-828c-482e-aa18-249053c7cd27)
-    (property "Sheetname" "Wireless" (at 45.72 98.3484 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "wireless.kicad_sch" (at 45.72 137.7446 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "nEXTRST" input (at 90.17 101.6 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid fa4496b4-fb01-49f2-b3f1-62f08c07da2c)
-    )
-    (pin "UART_WIRELESS_RTS" bidirectional (at 90.17 128.27 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid b33de2b4-030c-44b1-8507-a520262505f4)
-    )
-    (pin "UART_WIRELESS_CTS" bidirectional (at 90.17 125.73 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 289b5dbf-f255-45ce-bb7a-d508d2fc65ca)
-    )
-    (pin "UART_WIRELESS_RX" output (at 90.17 123.19 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid d95533f6-195f-4731-bd2e-b0f031e0ece5)
-    )
-    (pin "UART_WIRELESS_TX" input (at 90.17 120.65 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid abccbe4f-60bf-43f6-ae8b-01666493ed89)
-    )
-    (instances
-      (project "rpi-cm-ssd"
-        (path "/d596c5fc-bc79-4446-9328-b82e41a34e97" (page "7"))
-      )
-    )
-  )
-
-  (sheet (at 180.34 99.06) (size 49.53 38.1) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 83b039bf-d58d-4d6c-91b1-411c751c0a4c)
-    (property "Sheetname" "Sensors" (at 180.34 98.3484 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "sensors.kicad_sch" (at 180.34 137.7446 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "SPI_MISO" output (at 180.34 109.22 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 4dfb7bad-8fd1-427c-ad7b-6f263d69cd3b)
-    )
-    (pin "SPI_SCLK" input (at 180.34 114.3 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 6b7961fa-1bb8-4bfe-8fd7-f6e6ac73a6b3)
-    )
-    (pin "SPI_MOSI" input (at 180.34 111.76 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 98d09362-a7e0-485c-b79f-2e29207e193f)
-    )
-    (pin "nEXTRST" input (at 180.34 100.33 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid e29ae67e-d1ca-4d51-8f8d-788c23e10f55)
-    )
-    (pin "I2C_SCL" output (at 229.87 107.95 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 33f539ed-72bf-4baf-a767-8aee19bb8405)
-    )
-    (pin "I2C_SDA" bidirectional (at 229.87 110.49 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 416d98b9-1712-4728-b776-794fa5f46704)
-    )
-    (pin "~{SPI_BRIDGE_CS}" input (at 180.34 106.68 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 5bd5d578-f158-49c8-a9bd-31e38e516fc4)
-    )
-    (instances
-      (project "rpi-cm-ssd"
-        (path "/d596c5fc-bc79-4446-9328-b82e41a34e97" (page "6"))
-      )
-    )
-  )
-
-  (sheet (at 45.72 36.83) (size 43.18 36.83) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 8bad5741-37db-4b79-b533-af5ffd79bc37)
-    (property "Sheetname" "USB" (at 45.72 36.1184 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "usb.kicad_sch" (at 45.72 74.2446 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "USB2_N" input (at 88.9 45.72 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid cd515cf1-b917-44da-93b3-29b29401e196)
-    )
-    (pin "USB2_P" input (at 88.9 48.26 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 5b95b234-f6d5-4a66-9ac4-e21fd4b88f36)
-    )
-    (pin "nEXTRST" input (at 88.9 50.8 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid b3a2568a-252a-4034-9038-0fa3313fdd8e)
-    )
-    (pin "~{OC_FAULT}" input (at 88.9 39.37 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 0ef25884-5098-4dd7-a2ca-f2cb3d9abf8c)
-    )
-    (pin "USB_POWER_EN" output (at 88.9 41.91 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 9804ed30-c702-49a9-aade-cdeb425195b3)
-    )
-    (instances
-      (project "rpi-cm-ssd"
-        (path "/d596c5fc-bc79-4446-9328-b82e41a34e97" (page "6"))
-      )
-    )
-  )
-
-  (sheet (at 110.49 99.06) (size 45.72 38.1) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid cfd57078-6b32-4189-84cd-2d456d5a640c)
-    (property "Sheetname" "CM4 GPIO" (at 110.49 98.3484 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "cm4_gpio.kicad_sch" (at 110.49 137.7446 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "SPI0_MISO" input (at 156.21 109.22 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 80f999b0-2355-4550-8d92-83ac6c6705e7)
-    )
-    (pin "SPI0_MOSI" input (at 156.21 111.76 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 89210035-126c-42ac-ba48-e3bb76a02d54)
-    )
-    (pin "SPI0_SCLK" input (at 156.21 114.3 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 9a315aea-38d3-4390-acae-fc4bddfeefc6)
-    )
-    (pin "nEXTRST" output (at 110.49 100.33 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 85b635ce-b147-405e-91a5-44ac1def1855)
-    )
-    (pin "SPI0_CE1" output (at 156.21 104.14 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid b2d39310-0f0a-4f8f-abae-1b202c01ffb1)
-    )
-    (pin "SPI0_CE0" output (at 156.21 106.68 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 5d7bad51-16aa-484c-a819-f2627cb94d4d)
-    )
-    (pin "UART_WIRELESS_TX" output (at 110.49 120.65 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 1f21bd7e-bcef-4364-a888-65fa5b4429ad)
-    )
-    (pin "UART_WIRELESS_RX" input (at 110.49 123.19 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 937c91a3-d5e5-4e1b-a9b8-65a8306f6a52)
-    )
-    (pin "UART_WIRELESS_CTS" output (at 110.49 125.73 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid e3424efd-4f81-4028-b199-c0d3d04c06ec)
-    )
-    (pin "UART_WIRELESS_RTS" output (at 110.49 128.27 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid aa8e671a-d7ba-4afe-bad3-f702452298b8)
-    )
-    (instances
-      (project "rpi-cm-ssd"
-        (path "/d596c5fc-bc79-4446-9328-b82e41a34e97" (page "3"))
-      )
-    )
-  )
-
-  (sheet (at 111.76 36.83) (size 48.26 36.83) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid f931d0e3-8690-4710-a3ba-0dade8097dcb)
-    (property "Sheetname" "CM4 Highspeed" (at 111.76 36.1184 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "cm4_highspeed.kicad_sch" (at 111.76 74.2446 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "USB2_P" bidirectional (at 111.76 48.26 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid bbcc164b-eb8a-43ee-a599-266dcb8678c7)
-    )
-    (pin "USB2_N" bidirectional (at 111.76 45.72 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 715c27b4-d62b-452e-bcba-cc54e5bb077f)
-    )
-    (instances
-      (project "rpi-cm-ssd"
-        (path "/d596c5fc-bc79-4446-9328-b82e41a34e97" (page "4"))
-      )
-    )
-  )
-
-  (sheet (at 180.34 36.83) (size 52.07 38.1) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid fabb2dd3-d7af-4f82-a839-e30123e0a7f6)
-    (property "Sheetname" "Power" (at 180.34 36.1184 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "power.kicad_sch" (at 180.34 75.5146 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "PGOOD2" output (at 180.34 39.37 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid f8f4011c-bdbd-405b-bcbf-1a412f038815)
-    )
-    (pin "PGOOD1" output (at 180.34 41.91 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid deeac488-2b56-4f42-b0b9-a05fdace6b5e)
-    )
-    (pin "I2C_SDA" bidirectional (at 232.41 59.69 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid d93bf90e-ea15-47cd-a7df-6d51848d2ce6)
-    )
-    (pin "I2C_SCL" input (at 232.41 62.23 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 8cd1967d-dc15-4d75-bfdf-2d03ff152f0e)
-    )
-    (pin "~{PWRDN}" input (at 180.34 54.61 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid d054c6eb-1cc8-4c3c-a966-1fddc71aa2aa)
-    )
-    (pin "METER_ALERT" output (at 180.34 57.15 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 9bf176ca-6a18-4537-b7d1-48e64d7739b4)
-    )
-    (pin "~{OC_FAULT}" input (at 180.34 49.53 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 9c1b13e6-3363-4066-ab6f-bca61f012d01)
-    )
-    (pin "USB_PWR_EN" input (at 180.34 52.07 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 73753552-70a3-4f9b-981a-1dbfa6c469f1)
-    )
-    (instances
-      (project "rpi-cm-ssd"
-        (path "/d596c5fc-bc79-4446-9328-b82e41a34e97" (page "5"))
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "d596c5fc-bc79-4446-9328-b82e41a34e97")
+	(paper "A4")
+	(title_block
+		(title "Custom Homeassistant Base")
+		(rev "2")
+	)
+	(lib_symbols
+		(symbol "Mechanical:Fiducial"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FID"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fiducial"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fiducial Marker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fiducial marker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Fiducial*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fiducial_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 100.33 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8bd0e8eb-6a0c-4c03-9728-4c79bf5d064c")
+	)
+	(junction
+		(at 163.83 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96624f6f-de54-416a-aee8-313c9bccdb4b")
+	)
+	(junction
+		(at 107.95 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5af273a-c904-4557-95c0-ff7635cb173c")
+	)
+	(wire
+		(pts
+			(xy 167.64 52.07) (xy 180.34 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07823780-c6b9-4208-bea9-eff1955bc239")
+	)
+	(wire
+		(pts
+			(xy 232.41 62.23) (xy 236.22 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cc0247d-e6f0-4006-aeff-6e9f316c499d")
+	)
+	(wire
+		(pts
+			(xy 170.18 90.17) (xy 107.95 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f176648-a5d9-4c72-ac72-93d9978d2fe0")
+	)
+	(wire
+		(pts
+			(xy 95.25 30.48) (xy 95.25 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fba6999-3b42-44e6-a31e-0bd37237a051")
+	)
+	(wire
+		(pts
+			(xy 156.21 107.95) (xy 165.1 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fcc1527-470a-4720-9a66-ecf9c705b23b")
+	)
+	(wire
+		(pts
+			(xy 165.1 107.95) (xy 165.1 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29952c47-505b-4585-8d0f-fb5aeda5f237")
+	)
+	(wire
+		(pts
+			(xy 236.22 107.95) (xy 229.87 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "302db910-3144-46ce-8d1c-a5ae32a6ec05")
+	)
+	(wire
+		(pts
+			(xy 107.95 90.17) (xy 107.95 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38a63adc-261b-4b74-89fd-3771116d4c52")
+	)
+	(wire
+		(pts
+			(xy 170.18 49.53) (xy 170.18 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "398a1357-549c-4ebf-acee-59344873bc47")
+	)
+	(wire
+		(pts
+			(xy 163.83 105.41) (xy 163.83 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43b11118-8ed8-4190-98e8-abeb68ce63b6")
+	)
+	(wire
+		(pts
+			(xy 238.76 110.49) (xy 229.87 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "489a9210-ff2c-4422-8775-abe93b23c157")
+	)
+	(wire
+		(pts
+			(xy 232.41 59.69) (xy 238.76 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b22656e-2e67-4788-b27c-1fdb3fe08591")
+	)
+	(wire
+		(pts
+			(xy 100.33 100.33) (xy 107.95 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b5e5f7a-233b-4cc6-949b-8fc60625471e")
+	)
+	(wire
+		(pts
+			(xy 170.18 100.33) (xy 170.18 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "508fed7f-319e-4af6-beae-7426e9d8d5a0")
+	)
+	(wire
+		(pts
+			(xy 238.76 59.69) (xy 238.76 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a0aa7c0-15a2-49fe-b705-c3d4378d5d64")
+	)
+	(wire
+		(pts
+			(xy 163.83 44.45) (xy 180.34 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e803d13-25e6-47e6-becd-1826777148f3")
+	)
+	(wire
+		(pts
+			(xy 180.34 49.53) (xy 170.18 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f21cb56-72ec-48f9-b838-dc8c566a53b9")
+	)
+	(wire
+		(pts
+			(xy 90.17 101.6) (xy 100.33 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "614d939b-df00-4e9c-a983-8f5df74cdc9d")
+	)
+	(wire
+		(pts
+			(xy 170.18 30.48) (xy 95.25 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67a18111-2008-4171-8683-7624e1547b2b")
+	)
+	(wire
+		(pts
+			(xy 88.9 50.8) (xy 100.33 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68d5da2d-a327-4e60-907a-ce8a15a0077f")
+	)
+	(wire
+		(pts
+			(xy 156.21 105.41) (xy 163.83 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a980af3-b86e-4172-87d3-ae59a3532689")
+	)
+	(wire
+		(pts
+			(xy 180.34 100.33) (xy 170.18 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73ace5bc-d23e-4a48-93b9-a42dcb01c765")
+	)
+	(wire
+		(pts
+			(xy 165.1 46.99) (xy 180.34 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74089c30-c296-4e7f-bca1-804a182576cd")
+	)
+	(wire
+		(pts
+			(xy 160.02 44.45) (xy 163.83 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83d2b281-6376-42b0-9a23-99591cbb7331")
+	)
+	(wire
+		(pts
+			(xy 107.95 100.33) (xy 110.49 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e3f92b2-471f-4d0c-a9cd-125dd1689b74")
+	)
+	(wire
+		(pts
+			(xy 97.79 41.91) (xy 97.79 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a175a99d-a8d5-4a06-b964-063d14a8dc38")
+	)
+	(wire
+		(pts
+			(xy 100.33 50.8) (xy 100.33 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7fb9c04-bb87-4a4b-8801-ecfa943ff9dd")
+	)
+	(wire
+		(pts
+			(xy 236.22 62.23) (xy 236.22 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae547cdd-6c80-4f25-be0a-668799cf119d")
+	)
+	(wire
+		(pts
+			(xy 100.33 101.6) (xy 100.33 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c11290da-abf8-4d66-a646-517a431b1395")
+	)
+	(wire
+		(pts
+			(xy 88.9 48.26) (xy 111.76 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c90bd46b-0759-449f-87eb-21fe2ba84889")
+	)
+	(wire
+		(pts
+			(xy 97.79 33.02) (xy 167.64 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd13340f-767b-4090-9207-2487469cb8fc")
+	)
+	(bus
+		(pts
+			(xy 90.17 132.08) (xy 110.49 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdffb4fb-bc42-46cd-8f2b-6001dddd1f85")
+	)
+	(wire
+		(pts
+			(xy 95.25 39.37) (xy 88.9 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed92422f-0326-44bf-8c83-47be7c9ea657")
+	)
+	(bus
+		(pts
+			(xy 156.21 123.19) (xy 180.34 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa59ec29-1117-4064-bb8e-a7dfb22a6166")
+	)
+	(wire
+		(pts
+			(xy 167.64 33.02) (xy 167.64 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd94d511-7564-49ef-ba96-a13710c83465")
+	)
+	(wire
+		(pts
+			(xy 88.9 41.91) (xy 97.79 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fec627a0-3fc5-4405-8080-5cd1873a046f")
+	)
+	(wire
+		(pts
+			(xy 88.9 45.72) (xy 111.76 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff9a3fda-2787-4b86-9cd5-f1fd89f8667b")
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 252.73 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01e18bfa-8ad5-488d-8bc5-09ca0810682c")
+		(property "Reference" "H4"
+			(at 255.27 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 255.27 156.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
+			(at 252.73 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 252.73 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "KFS2-M2.5"
+			(at 252.73 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "rpi-cm-ssd"
+				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 252.73 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5739c92b-f6da-4d69-bc24-86fa6b8fdaa6")
+		(property "Reference" "FID1"
+			(at 255.27 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 255.27 130.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1mm"
+			(at 252.73 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 252.73 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "rpi-cm-ssd"
+				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
+					(reference "FID1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 252.73 139.7 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ba35d4d-942f-4540-98f8-9ba086a30452")
+		(property "Reference" "FID3"
+			(at 255.27 138.4299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 255.27 140.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1mm"
+			(at 252.73 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 252.73 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "rpi-cm-ssd"
+				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
+					(reference "FID3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 208.28 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f4aa210-44df-4ce4-91ad-b73367dd7bc7")
+		(property "Reference" "H2"
+			(at 210.82 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 210.82 156.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
+			(at 208.28 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 208.28 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "KFS2-M2.5"
+			(at 208.28 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "rpi-cm-ssd"
+				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 186.69 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b188010d-2da5-4b05-a3d7-61b5d03e3458")
+		(property "Reference" "H1"
+			(at 189.23 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 189.23 156.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
+			(at 186.69 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.69 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 186.69 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "KFS2-M2.5"
+			(at 186.69 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "rpi-cm-ssd"
+				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 231.14 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e1ab0652-57dd-4a51-81da-3176886a468a")
+		(property "Reference" "H3"
+			(at 233.68 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 233.68 156.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
+			(at 231.14 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 231.14 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 231.14 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "KFS2-M2.5"
+			(at 231.14 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "rpi-cm-ssd"
+				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 252.73 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa883ca3-a0d4-4fc4-8504-a0ab572eaa57")
+		(property "Reference" "FID2"
+			(at 255.27 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 255.27 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1mm"
+			(at 252.73 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 252.73 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "rpi-cm-ssd"
+				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
+					(reference "FID2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 45.72 99.06)
+		(size 44.45 38.1)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1676d548-828c-482e-aa18-249053c7cd27")
+		(property "Sheetname" "Wireless"
+			(at 45.72 98.3484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "wireless.kicad_sch"
+			(at 45.72 137.7446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "nEXTRST" input
+			(at 90.17 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "fa4496b4-fb01-49f2-b3f1-62f08c07da2c")
+		)
+		(pin "Wireless{UART SWD ~{RESET} ~{BOOT}}" bidirectional
+			(at 90.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8301f4f5-d8bc-425f-bd8d-ab7265a67108")
+		)
+		(instances
+			(project "rpi-cm-ssd"
+				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 180.34 99.06)
+		(size 49.53 38.1)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "83b039bf-d58d-4d6c-91b1-411c751c0a4c")
+		(property "Sheetname" "Sensors"
+			(at 180.34 98.3484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sensors.kicad_sch"
+			(at 180.34 137.7446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "nEXTRST" input
+			(at 180.34 100.33 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e29ae67e-d1ca-4d51-8f8d-788c23e10f55")
+		)
+		(pin "I2C_SCL" output
+			(at 229.87 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "33f539ed-72bf-4baf-a767-8aee19bb8405")
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 229.87 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "416d98b9-1712-4728-b776-794fa5f46704")
+		)
+		(pin "SPI{MISO MOSI SCLK CE}" bidirectional
+			(at 180.34 123.19 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e6299633-7114-4c79-8b98-5a54eec50faf")
+		)
+		(instances
+			(project "rpi-cm-ssd"
+				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 45.72 36.83)
+		(size 43.18 36.83)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8bad5741-37db-4b79-b533-af5ffd79bc37")
+		(property "Sheetname" "USB"
+			(at 45.72 36.1184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb.kicad_sch"
+			(at 45.72 74.2446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB2_N" input
+			(at 88.9 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "cd515cf1-b917-44da-93b3-29b29401e196")
+		)
+		(pin "USB2_P" input
+			(at 88.9 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5b95b234-f6d5-4a66-9ac4-e21fd4b88f36")
+		)
+		(pin "nEXTRST" input
+			(at 88.9 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b3a2568a-252a-4034-9038-0fa3313fdd8e")
+		)
+		(pin "~{OC_FAULT}" input
+			(at 88.9 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0ef25884-5098-4dd7-a2ca-f2cb3d9abf8c")
+		)
+		(pin "USB_POWER_EN" output
+			(at 88.9 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9804ed30-c702-49a9-aade-cdeb425195b3")
+		)
+		(instances
+			(project "rpi-cm-ssd"
+				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 110.49 99.06)
+		(size 45.72 38.1)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "cfd57078-6b32-4189-84cd-2d456d5a640c")
+		(property "Sheetname" "CM4 GPIO"
+			(at 110.49 98.3484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cm4_gpio.kicad_sch"
+			(at 110.49 137.7446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "nEXTRST" output
+			(at 110.49 100.33 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "85b635ce-b147-405e-91a5-44ac1def1855")
+		)
+		(pin "5V_PG" input
+			(at 156.21 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "bf6c4249-4252-4b03-a741-642c931b75ce")
+		)
+		(pin "3V3_PG" input
+			(at 156.21 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "de110d71-6a73-4d16-884d-2720122f852b")
+		)
+		(pin "Wireless{UART SWD ~{RESET} ~{BOOT}}" bidirectional
+			(at 110.49 132.08 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "cb716502-7419-4875-87ab-bd023f864e0b")
+		)
+		(pin "SPI{MISO MOSI SCLK CE}" bidirectional
+			(at 156.21 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a0dae1b4-1fd8-4372-8ffc-9a94a1552dad")
+		)
+		(instances
+			(project "rpi-cm-ssd"
+				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 111.76 36.83)
+		(size 48.26 36.83)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f931d0e3-8690-4710-a3ba-0dade8097dcb")
+		(property "Sheetname" "CM4 Highspeed"
+			(at 111.76 36.1184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cm4_highspeed.kicad_sch"
+			(at 111.76 74.2446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB2_P" bidirectional
+			(at 111.76 48.26 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "bbcc164b-eb8a-43ee-a599-266dcb8678c7")
+		)
+		(pin "USB2_N" bidirectional
+			(at 111.76 45.72 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "715c27b4-d62b-452e-bcba-cc54e5bb077f")
+		)
+		(pin "3V3_PG" input
+			(at 160.02 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "aaba8d7d-d953-4465-8ce7-1689663cadea")
+		)
+		(instances
+			(project "rpi-cm-ssd"
+				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 180.34 36.83)
+		(size 52.07 38.1)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fabb2dd3-d7af-4f82-a839-e30123e0a7f6")
+		(property "Sheetname" "Power"
+			(at 180.34 36.1184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 180.34 75.5146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 232.41 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d93bf90e-ea15-47cd-a7df-6d51848d2ce6")
+		)
+		(pin "I2C_SCL" input
+			(at 232.41 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8cd1967d-dc15-4d75-bfdf-2d03ff152f0e")
+		)
+		(pin "~{PWRDN}" input
+			(at 180.34 54.61 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d054c6eb-1cc8-4c3c-a966-1fddc71aa2aa")
+		)
+		(pin "METER_ALERT" output
+			(at 180.34 57.15 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9bf176ca-6a18-4537-b7d1-48e64d7739b4")
+		)
+		(pin "~{OC_FAULT}" input
+			(at 180.34 49.53 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9c1b13e6-3363-4066-ab6f-bca61f012d01")
+		)
+		(pin "USB_PWR_EN" input
+			(at 180.34 52.07 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "73753552-70a3-4f9b-981a-1dbfa6c469f1")
+		)
+		(pin "3V3_PG" output
+			(at 180.34 44.45 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "47413ae3-a2b0-4b97-b87f-b0a0ee6d3cdd")
+		)
+		(pin "5V_PG" output
+			(at 180.34 46.99 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "21f5c3dd-199a-43fb-8c60-1b02253a0572")
+		)
+		(instances
+			(project "rpi-cm-ssd"
+				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
