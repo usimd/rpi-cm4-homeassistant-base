@@ -172,6 +172,12 @@
 		)
 	)
 	(junction
+		(at 175.26 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "113a2fb9-a5ae-4aa7-9f57-a404ed01dc97")
+	)
+	(junction
 		(at 100.33 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -198,16 +204,6 @@
 			(type default)
 		)
 		(uuid "07823780-c6b9-4208-bea9-eff1955bc239")
-	)
-	(wire
-		(pts
-			(xy 232.41 62.23) (xy 236.22 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cc0247d-e6f0-4006-aeff-6e9f316c499d")
 	)
 	(wire
 		(pts
@@ -251,16 +247,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 107.95) (xy 229.87 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "302db910-3144-46ce-8d1c-a5ae32a6ec05")
-	)
-	(wire
-		(pts
 			(xy 107.95 90.17) (xy 107.95 100.33)
 		)
 		(stroke
@@ -291,26 +277,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 110.49) (xy 229.87 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "489a9210-ff2c-4422-8775-abe93b23c157")
-	)
-	(wire
-		(pts
-			(xy 232.41 59.69) (xy 238.76 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b22656e-2e67-4788-b27c-1fdb3fe08591")
-	)
-	(wire
-		(pts
 			(xy 100.33 100.33) (xy 107.95 100.33)
 		)
 		(stroke
@@ -329,15 +295,15 @@
 		)
 		(uuid "508fed7f-319e-4af6-beae-7426e9d8d5a0")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 238.76 59.69) (xy 238.76 110.49)
+			(xy 156.21 114.3) (xy 175.26 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5a0aa7c0-15a2-49fe-b705-c3d4378d5d64")
+		(uuid "58118e7e-2103-4bd9-a788-9551fde3b900")
 	)
 	(wire
 		(pts
@@ -378,6 +344,16 @@
 			(type default)
 		)
 		(uuid "67a18111-2008-4171-8683-7624e1547b2b")
+	)
+	(bus
+		(pts
+			(xy 180.34 66.04) (xy 175.26 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6812977b-f542-4a22-a6f7-60e13dc63a1e")
 	)
 	(wire
 		(pts
@@ -429,6 +405,16 @@
 		)
 		(uuid "83d2b281-6376-42b0-9a23-99591cbb7331")
 	)
+	(bus
+		(pts
+			(xy 175.26 114.3) (xy 175.26 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ecec8f2-fd07-4ff2-8b0d-d46b5228f51d")
+	)
 	(wire
 		(pts
 			(xy 107.95 100.33) (xy 110.49 100.33)
@@ -461,16 +447,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 62.23) (xy 236.22 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae547cdd-6c80-4f25-be0a-668799cf119d")
-	)
-	(wire
-		(pts
 			(xy 100.33 101.6) (xy 100.33 100.33)
 		)
 		(stroke
@@ -488,6 +464,16 @@
 			(type default)
 		)
 		(uuid "c90bd46b-0759-449f-87eb-21fe2ba84889")
+	)
+	(bus
+		(pts
+			(xy 175.26 104.14) (xy 180.34 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc2e87b4-a474-40d2-b981-3f586a168942")
 	)
 	(wire
 		(pts
@@ -521,13 +507,13 @@
 	)
 	(bus
 		(pts
-			(xy 156.21 123.19) (xy 180.34 123.19)
+			(xy 175.26 66.04) (xy 175.26 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fa59ec29-1117-4064-bb8e-a7dfb22a6166")
+		(uuid "f9a437d2-d2ee-4e6b-a8c8-c2b787d6f423")
 	)
 	(wire
 		(pts
@@ -558,79 +544,6 @@
 			(type default)
 		)
 		(uuid "ff9a3fda-2787-4b86-9cd5-f1fd89f8667b")
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 252.73 154.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "01e18bfa-8ad5-488d-8bc5-09ca0810682c")
-		(property "Reference" "H4"
-			(at 255.27 153.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 255.27 156.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 252.73 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 252.73 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 252.73 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "KFS2-M2.5"
-			(at 252.73 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "rpi-cm-ssd"
-				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
@@ -706,7 +619,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ba35d4d-942f-4540-98f8-9ba086a30452")
-		(property "Reference" "FID3"
+		(property "Reference" "FID2"
 			(at 255.27 138.4299 90)
 			(effects
 				(font
@@ -754,7 +667,7 @@
 		(instances
 			(project "rpi-cm-ssd"
 				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
-					(reference "FID3")
+					(reference "FID2")
 					(unit 1)
 				)
 			)
@@ -770,7 +683,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f4aa210-44df-4ce4-91ad-b73367dd7bc7")
-		(property "Reference" "H2"
+		(property "Reference" "H5"
 			(at 210.82 153.6699 0)
 			(effects
 				(font
@@ -827,7 +740,7 @@
 		(instances
 			(project "rpi-cm-ssd"
 				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
-					(reference "H2")
+					(reference "H5")
 					(unit 1)
 				)
 			)
@@ -843,7 +756,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b188010d-2da5-4b05-a3d7-61b5d03e3458")
-		(property "Reference" "H1"
+		(property "Reference" "H6"
 			(at 189.23 153.6699 0)
 			(effects
 				(font
@@ -900,7 +813,7 @@
 		(instances
 			(project "rpi-cm-ssd"
 				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
-					(reference "H1")
+					(reference "H6")
 					(unit 1)
 				)
 			)
@@ -916,7 +829,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1ab0652-57dd-4a51-81da-3176886a468a")
-		(property "Reference" "H3"
+		(property "Reference" "H2"
 			(at 233.68 153.6699 0)
 			(effects
 				(font
@@ -973,7 +886,7 @@
 		(instances
 			(project "rpi-cm-ssd"
 				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
-					(reference "H3")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -989,7 +902,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa883ca3-a0d4-4fc4-8504-a0ab572eaa57")
-		(property "Reference" "FID2"
+		(property "Reference" "FID3"
 			(at 255.27 133.3499 0)
 			(effects
 				(font
@@ -1037,7 +950,7 @@
 		(instances
 			(project "rpi-cm-ssd"
 				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97"
-					(reference "FID2")
+					(reference "FID3")
 					(unit 1)
 				)
 			)
@@ -1141,35 +1054,15 @@
 			)
 			(uuid "e29ae67e-d1ca-4d51-8f8d-788c23e10f55")
 		)
-		(pin "I2C_SCL" output
-			(at 229.87 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "33f539ed-72bf-4baf-a767-8aee19bb8405")
-		)
-		(pin "I2C_SDA" bidirectional
-			(at 229.87 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "416d98b9-1712-4728-b776-794fa5f46704")
-		)
-		(pin "SPI{MISO MOSI SCLK CE}" bidirectional
-			(at 180.34 123.19 180)
+		(pin "I2C{SDA SCL}" bidirectional
+			(at 180.34 104.14 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e6299633-7114-4c79-8b98-5a54eec50faf")
+			(uuid "01531f30-4911-4b89-97a6-86cd15f227b2")
 		)
 		(instances
 			(project "rpi-cm-ssd"
@@ -1337,15 +1230,25 @@
 			)
 			(uuid "cb716502-7419-4875-87ab-bd023f864e0b")
 		)
-		(pin "SPI{MISO MOSI SCLK CE}" bidirectional
-			(at 156.21 123.19 0)
+		(pin "UART{TX RX}" bidirectional
+			(at 110.49 104.14 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "79a5cd30-2cc8-47f2-b3fa-11fb93eb81c9")
+		)
+		(pin "I2C{SDA SCL}" bidirectional
+			(at 156.21 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a0dae1b4-1fd8-4372-8ffc-9a94a1552dad")
+			(uuid "35062e73-95a2-481f-9319-e2dda616c149")
 		)
 		(instances
 			(project "rpi-cm-ssd"
@@ -1453,26 +1356,6 @@
 				(justify left top)
 			)
 		)
-		(pin "I2C_SDA" bidirectional
-			(at 232.41 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "d93bf90e-ea15-47cd-a7df-6d51848d2ce6")
-		)
-		(pin "I2C_SCL" input
-			(at 232.41 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "8cd1967d-dc15-4d75-bfdf-2d03ff152f0e")
-		)
 		(pin "~{PWRDN}" input
 			(at 180.34 54.61 180)
 			(effects
@@ -1532,6 +1415,16 @@
 				(justify left)
 			)
 			(uuid "21f5c3dd-199a-43fb-8c60-1b02253a0572")
+		)
+		(pin "I2C{SDA SCL}" bidirectional
+			(at 180.34 66.04 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c865f172-a73e-4393-8f40-12f78e014441")
 		)
 		(instances
 			(project "rpi-cm-ssd"

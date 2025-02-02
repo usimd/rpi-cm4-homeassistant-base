@@ -1275,7 +1275,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "16c71a7f-0680-4fc7-9936-c299269b1905")
-		(property "Reference" "U13"
+		(property "Reference" "U12"
 			(at 67.31 26.67 0)
 			(effects
 				(font
@@ -1420,6 +1420,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C144336"
+			(at 53.34 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9ed34c72-fc12-4f48-bf6e-d8f7ca2127ad")
 		)
@@ -1447,7 +1456,7 @@
 		(instances
 			(project "rpi-cm-ssd"
 				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97/83b039bf-d58d-4d6c-91b1-411c751c0a4c"
-					(reference "U13")
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -1529,7 +1538,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "662fc4bd-8dc3-41a0-af6c-9134108ddf21")
-		(property "Reference" "TP20"
+		(property "Reference" "TP2"
 			(at 151.13 48.7679 0)
 			(effects
 				(font
@@ -1580,7 +1589,7 @@
 		(instances
 			(project "rpi-cm-ssd"
 				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97/83b039bf-d58d-4d6c-91b1-411c751c0a4c"
-					(reference "TP20")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -1662,7 +1671,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "749d1431-9051-433b-9304-7756b15989ba")
-		(property "Reference" "C54"
+		(property "Reference" "C34"
 			(at 105.41 77.4699 0)
 			(effects
 				(font
@@ -1725,7 +1734,7 @@
 		(instances
 			(project "rpi-cm-ssd"
 				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97/83b039bf-d58d-4d6c-91b1-411c751c0a4c"
-					(reference "C54")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -1873,7 +1882,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "965e522a-6233-4c70-a88f-3d8360fd9091")
-		(property "Reference" "C53"
+		(property "Reference" "C42"
 			(at 104.14 36.8299 0)
 			(effects
 				(font
@@ -1936,7 +1945,7 @@
 		(instances
 			(project "rpi-cm-ssd"
 				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97/83b039bf-d58d-4d6c-91b1-411c751c0a4c"
-					(reference "C53")
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -1952,7 +1961,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b65951aa-6be9-42c9-ad80-6111d1eb718d")
-		(property "Reference" "TP18"
+		(property "Reference" "TP3"
 			(at 135.89 48.7679 0)
 			(effects
 				(font
@@ -2003,7 +2012,7 @@
 		(instances
 			(project "rpi-cm-ssd"
 				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97/83b039bf-d58d-4d6c-91b1-411c751c0a4c"
-					(reference "TP18")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -2151,7 +2160,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d9887b48-f8e7-4a65-875c-bb8417f8e50c")
-		(property "Reference" "U14"
+		(property "Reference" "U8"
 			(at 68.58 67.31 0)
 			(effects
 				(font
@@ -2296,6 +2305,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C144336"
+			(at 54.61 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ca3ae96b-7f4c-4218-ad3e-0d4811025863")
 		)
@@ -2323,7 +2341,7 @@
 		(instances
 			(project "rpi-cm-ssd"
 				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97/83b039bf-d58d-4d6c-91b1-411c751c0a4c"
-					(reference "U14")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -2470,7 +2488,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f39032cd-d169-4147-a7ca-c18ea6e02701")
-		(property "Reference" "R36"
+		(property "Reference" "R27"
 			(at 95.25 77.4699 0)
 			(effects
 				(font
@@ -2533,7 +2551,7 @@
 		(instances
 			(project "rpi-cm-ssd"
 				(path "/d596c5fc-bc79-4446-9328-b82e41a34e97/83b039bf-d58d-4d6c-91b1-411c751c0a4c"
-					(reference "R36")
+					(reference "R27")
 					(unit 1)
 				)
 			)
